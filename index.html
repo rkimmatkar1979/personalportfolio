@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d3db28cbf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>                
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>                    
+                </ul>
+            </nav>
+            <div class="header-text">                
+                <p>Software Developer</p>
+                <h1>Hi, I am <span>Rishikesh</span><br> from India.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="user2.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a IIT Hyderabad graduate student, and I like Web Development and have some interest in GameDev also. My hobbies include Reading books, working out, watching movies and anime. Thanks for checking out my Website.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C++ and JS - intermediate to Good profiency<br>Python - Some Experience </li>
+                            <li><span>Toolkits and Softwares</span><br>SQL, MATLAB, Arduino, SolidEdge</li>
+                            <li><span>Libraries and Frameworks</span><br> OpenCV, Numpy, Pandas, ReactJS, Git, Tensorfow</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Personal Portfolio Website and Video Player in JS</span><br>Web App Development</li>
+                            <li><span>MongoDB and MySQL</span><br>Database querying and Management</li>
+                            <li><span>Flappy Bird</span><br>Game Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>IIT Hyderabad 2019-2023</span><br>B.Tech Chemical Engg</li>
+                            <li><span>IIT Hyderabad 2019-2023</span><br>Minor in Biomedical Engg</li>
+                            <li><span>12th HSC</span><br>93.5%</li>
+                            <li><span>10th CBSE</span><br>97.5%</li>                                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Serivces</h1>
+            <div class="services-list">
+                <div>    
+                    <i class="fa-solid fa-crop-simple"></i>            
+                    <h2>Web Designing</h2>
+                    <p>Have done some projects on Web Apps</p>
+                    <a href="#about">Learn more</a>
+                </div>
+                <div>                  
+                    <i class="fa-sharp fa-solid fa-code"></i> 
+                    <h2>Coding</h2>
+                    <p>I code regularly on platforms like LeetCode and GFG</p>
+                    <a href="#about">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                    <h2>DBMS</h2>
+                    <p>Have experience with SQL and knowledge of MongoDB</p>
+                    <a href="#about">Learn more</a>
+                </div>                 
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="vp1.jpg">
+                    <div class="layer">
+                        <h3>Video Player in JS</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Ecommerce App in JS</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="work-2.png"> 
+                    <div class="layer">
+                        <h3>Web Scraper in Py</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Flappy Bird in C++</h3>
+                        <p>Description</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>  
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>rkimmatkar1979@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>(+91)-9307464117</p>
+                    <div class="social-icons">
+                        <a href="https://leetcode.com/rkimmatkar1979/"><i class="fa-sharp fa-solid fa-code"></i>  </a> 
+                        <a href="https://github.com/rkimmatkar1979"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_rizzi.kesh_/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCRF6Z6GP-_l3M8NOglLMGsg"><i class="fa-brands fa-youtube"></i></a>
+                    </div> 
+                    <a href="RishikeshKimmatkar_CH19BTECH11028.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Bear<i class="fa-sharp fa-solid fa-trademark"></i></p>            
+        </div>
+    </div>
+
+    <script src="script.js"></script>    
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbygzV0-WGUgRSrK7agENRGvrrvcR2zVGX3WgOPTnfBH2ywwO_cYpDwFEWRpDwp2x3TVxA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Form Submitted Succesfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
